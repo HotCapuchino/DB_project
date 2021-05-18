@@ -1,0 +1,3 @@
+CREATE OR REPLACE VIEW `extra_salary`
+AS
+(SELECT );

@@ -3,6 +3,6 @@ CREATE TABLE `airport` (
 	`name` tinytext NOT NULL,
 	`country` tinytext NOT NULL,
 	`location` tinytext NOT NULL,
-	`max_capacity` SMALLINT UNSIGNED NOT NULL,
+	`max_capacity` INT UNSIGNED NOT NULL,
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
