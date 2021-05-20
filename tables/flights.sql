@@ -6,7 +6,7 @@ CREATE TABLE `flights` (
 	`departure_date` DATE NOT NULL,
 	`arrival_date` DATE NOT NULL,
 	`plane_id` int NOT NULL,
-	`min_passengers` int NOT NULL,
+	`min_passengers` int unsigned NOT NULL,
 	`status_id` SMALLINT NOT NULL,
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
