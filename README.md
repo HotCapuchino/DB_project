@@ -1,8 +1,7 @@
 <h1>Проектирование базы данных для авиакомпании</h1>
 <h2>Схема базы данных:</h2>
 <img src="./aviacompany.png">
-<span>Ссылка на структуру БД:</span>
-<a>https://dbdiagram.io/embed/60a661f5b29a09603d15c65a</a>
+<a href="https://dbdiagram.io/embed/60a661f5b29a09603d15c65a">Ссылка на структуру БД</a>
 <hr>
 <h2>Таблицы и их описание</h2>
 <table>
