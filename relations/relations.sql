@@ -15,10 +15,14 @@ REFERENCES `ticket`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE `orders` ADD CONSTRAINT `orders_customer_fk` FOREIGN KEY (`customer_id`) 
 REFERENCES `customers`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
 ALTER TABLE `flights_staff` ADD CONSTRAINT `flights_staff_flight_fk` FOREIGN KEY (`flight_id`) 
-REFERENCES `flights`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+REFERENCES `flights`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
 ALTER TABLE `flights_staff` ADD CONSTRAINT `flights_staff_person_fk` FOREIGN KEY (`staff_id`) 
 REFERENCES `company_staff`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-ALTER TABLE `salaries` ADD CONSTRAINT `salaries_person_fk` FOREIGN KEY (`staff_id`) 
+ALTER TABLE `staff_salaries` ADD CONSTRAINT `salaries_person_fk` FOREIGN KEY (`staff_id`) 
 REFERENCES `company_staff`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE `plane` ADD CONSTRAINT `plane_status_fk` FOREIGN KEY (`status_id`) 
 REFERENCES `plane_statuses`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `orders` ADD CONSTRAINT `order_status_fk` FOREIGN KEY (`status_id`)
+REFERENCES  `order_statuses`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE `plane_milleage` ADD CONSTRAINT `plane_id_fk` FOREIGN KEY(`plane_id`)
+REFERENCES  `plane`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
